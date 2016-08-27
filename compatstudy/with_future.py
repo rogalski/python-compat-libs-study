@@ -1,5 +1,11 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
-import future
+from future.builtins import range
+from future.utils import iteritems
 
-if __name__ == "__main__":
-    print(future.__version__)
+
+def get_range():
+    return range(3)
+
+
+def get_iteritems():
+    return iteritems({})

@@ -6,7 +6,8 @@ import compatstudy.with_future
 
 
 def _test_module(module):
-    assert module is not None
+    assert not isinstance(module.get_range(), list)
+    assert not isinstance(module.get_iteritems(), list)
 
 
 def test_with_six():
