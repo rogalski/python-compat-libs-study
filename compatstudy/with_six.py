@@ -9,3 +9,10 @@ def get_range():
 
 def get_iteritems():
     return six.iteritems({})
+
+
+def branching():
+    if six.PY2:
+        print("PY2")
+    else:
+        print("PY3")
